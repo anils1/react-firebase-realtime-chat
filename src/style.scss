@@ -1,0 +1,76 @@
+.formContainer{
+    height: 100vh;
+    background-color: #7b96ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    .formWrapper{
+        background-color: white;
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 60px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 12px;
+        .logo{
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .register{
+            color: black;
+            font-size: 15px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                padding: 0.5rem;
+                border: none;
+                width: 250px;
+                border-style: solid;
+                border-radius: 8px;
+
+                &::placeholder{
+                    color: black;
+                }
+            }
+            button{
+                background-color: #7b96ec;
+                color: white;
+                padding: 10px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+        p{
+           color: #7b96ec; 
+           font-size: 12px;
+        }
+   }
+}
+
+.home{
+    //background: linear-gradient(to right, #abbaab, #ffffff);;
+    background-color: #7b96ec;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 80%;
+        height: 90%;
+        display: flex;
+    }
+}

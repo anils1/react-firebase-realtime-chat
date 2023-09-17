@@ -1,6 +1,6 @@
 import AddProfile from '../image/AddProfile.png';
 import { auth, storage } from '../firebase';
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useState } from 'react';
 
@@ -32,7 +32,7 @@ const Register = () => {
                             name,
                             photURL:downloadURL
                         });
-                        
+
 
                         console.log('File available at', downloadURL);
                     });
